@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="ITW Project: Forrest Gump" />
+    <meta name="author" content="Marek Miček" />
+    <meta name="copyright" content="Marek Miček" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Forrest Gump</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="mobile.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>   
+<header>
+
+<nav id="navbar">
+    <div id="content">
+        <ul class="nav-list">
+            <li><a href="#about-holder">About</a></li>
+            <li><a href="#education-holder">Education</a></li>
+            <li><a href="#experience-holder">Experience</a></li>
+            <li><a href="#family-holder">Family</a></li>
+            <li><a href="#awards-holder">Awards</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+<div class="heading">
+    <h1><a href="https://focused-ramanujan-aa641e.netlify.com/" target="h-blank">I am Forrest! Forrest Gump</a></h1>
+    <p class="sub-heading"> 
+        Ordinary man | Extraordinary life
+    </p>
+</div>
+</header>
+
+<div id="about-holder"></div>
+<section id="about" class="about"> 
+    <div class="container">
+        <div class="logo-img">
+            <img src="images/logo.jpg" alt="logo">
+        </div>
+        <div class="description">
+            <h2>About me</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore culpa dicta quidem iure doloremque, 
+                quod similique velit corporis quam fugiat eos voluptatibus distinctio hic ab, labore iste necessitatibus,
+                 deleniti earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iste, consequuntur soluta.
+            </p>
+            <div class="social-media">
+                <ul class="icon-list">
+
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    
+                </ul>
+            </div>
+        </div>   
+    </div>
+</section>
+
+<!-- each big section starts with empty div to avoid fixed navbar covers it's heading-->
+
+<div id="education-holder"></div>
+<section id="education">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Education</h2>
+        </div>
+        <div class="education-item">
+            <div class="education-img">
+                <img src="images/bus.jpg" alt="first day">
+            </div>
+
+            <div class="education-descript">
+                <h6>1950-1956</h6>
+                <h3>Greenbow's elementary</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!  
+                </p>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-descript">
+                <h6>1956-1962</h6>
+                <h3>Alabama's high scool</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!  
+                </p>
+            </div>
+            <div class="education-img">
+                <img src="images/high_school.jpg" alt="Day with Jenny">
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-img">
+                <img src="images/match.jpg" alt="Footbal match">
+            </div>
+
+            <div class="education-descript">
+                <h6>1962-1967</h6>
+                <h3>Alabama's university</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!  
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div id="experience-holder"></div>
+<section id="experience">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Work Experience</h2>
+            <h6>Past and current jobs</h6>
+        </div>
+
+        <div class="time-line">
+            <ul>
+                <li class="date" data-date="1967 - 1969">
+                    <h3>United States Army</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Dignissimos accusantium amet facere aut eius aspernatur 
+                    </p>
+                </li>
+                <li class="date" data-date="1969 - 1974">
+                    <h3>All-American Ping Pong team</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Dignissimos accusantium amet facere aut eius aspernatur 
+                    </p>
+                </li>
+                <li class="date" data-date="1974 - present">
+                    <h3>Bubba Gump Shrimp Company</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Dignissimos accusantium amet facere aut eius aspernatur 
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="experience-descript">
+            <div class="experience-item">
+                <div><img src="images/Army.jpg" alt="Vietnam War"></div>
+                <button id="army-button">Army</button>
+            </div>
+            <div class="experience-item">
+                <div><img src="images/ping-pong.jpg" alt="Ping-pong"></div>
+                <button id="ping-pong-button">Ping-pong team</button>
+            </div>
+            <div class="experience-item">
+                <div><img src="images/shrims.jpg" alt="Catchig shrims"></div>
+                <button id="company-button">Bubba Gump Company</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="section-quatation">
+            <blockquote class="quatation">
+                <p>
+                    My mama always said: Life is like a box of chocolate. You never know what you’re gonna get.
+                </p>
+            </blockquote>
+
+        </div>
+
+</section>
+
+
+<div id="family-holder"></div>
+<section id="family">
+    <div class="container">
+        <div class="section-heading">
+            <h2>My family</h2>
+            <h6>Those I always loved</h6>
+        </div>
+        <div class="family-item">
+            <div class="family-img">
+                <img src="images/mom.jpeg" alt="Mom">
+            </div>
+
+            <div class ="family-descript">
+                <h6>My mother</h6>
+                <h3>Mrs Gump</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!  
+                </p>
+            </div>
+        </div>
+    
+        <div class="family-item">
+            <div class="family-descript">
+                <h6>My wife</h6>
+                <h3>Jenny</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!  
+                </p>
+            </div>
+
+            <div class="family-img">
+                <img src="images/jenny.jpg" alt="Jenny">
+            </div>
+        </div>
+
+        <div class="family-item">
+            <div class="family-img">
+                <img src="images/son.jpg" alt="Son">
+            </div>
+
+            <div class="family-descript">
+                <h6>My son</h6>
+                <h3>Forrest Gump jr.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!  
+                </p>
+            </div>
+        </div>
+
+        <div class="family-item">
+            <div class="family-descript">
+                <h6>My best friend</h6>
+                <h3>Lieutenant Dan</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolor mollitia non aperiam quia obcaecati consectetur!  
+                </p>
+            </div>
+
+            <div class="family-img">
+                <img src="images/dan.jpg" alt="Lieutenant Dan">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div id="awards-holder"></div>
+<section id="awards">
+    <div class="container">
+        <div class="section-heading">
+            <h2>My awards</h2>
+            <h6>List of them</h6>
+        </div>
+        <div class="award-content">
+           <ul class="award-list">
+               <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li>
+               <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li>
+               <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li>
+               <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li>
+           </ul> 
+        </div>
+    </div>
+    
+</section>
+
+<footer>
+    <p>&copy; Marek Miček FIT VUT Brno 2020. All Rights Reserved</p>
+</footer>
+
+
+
+</body>
+
+</html>
