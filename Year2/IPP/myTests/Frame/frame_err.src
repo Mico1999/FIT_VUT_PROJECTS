@@ -1,0 +1,8 @@
+.IPPcode21
+
+CREATEFRAME
+DEFVAR TF@a
+MOVE TF@a string@Hello\032world
+
+POPFRAME
+WRITE LF@a

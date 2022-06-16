@@ -1,0 +1,1 @@
+package main // Works just fine (Should not)

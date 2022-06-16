@@ -1,0 +1,6 @@
+.IPPcode21
+
+DEFVAR GF@exit
+MOVE GF@exit int@100
+
+EXIT GF@exit

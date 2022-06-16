@@ -1,0 +1,4 @@
+.IPPcode21
+
+DEFVAR GF@RESULT
+IDIV GF@RESULT int@5 int@0

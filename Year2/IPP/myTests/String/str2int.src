@@ -1,0 +1,6 @@
+.IPPcode21
+
+DEFVAR GF@aa
+STRI2INT GF@aa string@auto int@0
+
+WRITE GF@aa

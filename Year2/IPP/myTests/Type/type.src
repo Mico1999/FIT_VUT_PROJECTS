@@ -1,0 +1,25 @@
+.IPPcode21
+
+DEFVAR GF@uninit
+DEFVAR GF@a
+DEFVAR GF@b
+DEFVAR GF@c
+DEFVAR GF@d
+DEFVAR GF@e
+
+TYPE GF@a GF@uninit #empty string because var is not init
+TYPE GF@b string@ahoj
+TYPE GF@c int@5
+TYPE GF@d bool@false
+TYPE GF@e nil@nil
+
+WRITE GF@a
+WRITE string@\010
+WRITE GF@b
+WRITE string@\010
+WRITE GF@c
+WRITE string@\010
+WRITE GF@d
+WRITE string@\010
+WRITE GF@e
+WRITE string@\010

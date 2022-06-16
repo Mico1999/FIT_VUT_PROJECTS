@@ -1,0 +1,11 @@
+
+.IPPcode21
+
+DEFVAR GF@res
+DEFVAR GF@aa
+MOVE GF@aa string@Funxuje
+
+SETCHAR GF@aa int@3 string@gblablablaa
+GETCHAR GF@res GF@aa int@3
+
+WRITE GF@res

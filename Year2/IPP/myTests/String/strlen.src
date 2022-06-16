@@ -1,0 +1,11 @@
+.IPPcode21
+
+CREATEFRAME
+DEFVAR TF@len
+PUSHFRAME
+
+DEFVAR GF@var
+MOVe GF@var string@Hello\032world
+strlen LF@len GF@var
+
+write LF@len

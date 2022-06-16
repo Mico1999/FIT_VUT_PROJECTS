@@ -1,0 +1,17 @@
+.IPPcode21
+
+CREATEFRAME
+DEFVAR TF@var
+MOVE TF@var string@niee
+PUSHFRAME
+LABEL begin
+DEFVAR LF@side
+DEFVAR LF@result
+
+READ LF@side int
+EQ LF@result LF@side int@5
+
+JUMPIFEQ end LF@result bool@true
+WRITE string@error!!!\010
+
+LABEL end

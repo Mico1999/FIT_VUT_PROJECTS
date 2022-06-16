@@ -1,0 +1,15 @@
+.IPPcode21
+
+
+CREATEFRAME
+DEFvar TF@aaa
+MOVE TF@aaa bool@true
+PUSHFRAME
+
+WRITE LF@aaa
+MOVE LF@aaa bool@false
+
+POPFRAME
+WRITE string@\010
+WRITE TF@aaa
+

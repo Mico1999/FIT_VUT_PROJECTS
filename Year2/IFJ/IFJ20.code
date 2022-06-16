@@ -1,0 +1,70 @@
+.IFJcode20
+
+#// Program 1: Vypocet faktorialu (iterativne)
+#package main
+#func main() {
+#    print("Zadejte cislo pro vypocet faktorialu: ")
+#    a := 0
+#    a, _ = inputi()
+#    if a < 0 {
+#        print("Faktorial nejde spocitat!\n")
+#    } else {
+#        vysl := 1
+#        for ; a > 0; a = a - 1 {
+#            vysl = vysl * a
+#        }
+#        print("Vysledek je ", vysl, "\n")
+#    }
+#}
+
+DEFVAR GF@_
+DEFVAR GF@expr_result
+JUMP main
+
+LABEL inputi
+    CREATEFRAME
+    PUSHFRAME
+        DEFVAR LF@a
+        READ LF@a int
+        DEFVAR LF@b
+        TYPE LF@b LF@a
+        JUMPIFEQ correct LF@b string@int
+        PUSHS int@1
+        PUSHS int@0
+        JUMP END
+        LABEL correct
+        PUSHS int@0
+        PUSHS LF@a
+    LABEL END
+    POPFRAME
+RETURN
+    
+
+LABEL main
+    CREATEFRAME
+    PUSHFRAME
+        WRITE string@Zadejte\032cislo\032pro\032vypocet\032faktorialu:\032
+        DEFVAR LF@a
+        MOVE LF@a int@0
+
+        CALL inputi
+        POPS LF@a
+        POPS GF@_
+
+        LT GF@expr_result LF@a int@0
+        JUMPIFNEQ else GF@expr_result bool@true 
+
+        WRITE string@Faktorial\032nejde\032spocitat!\010
+        
+        LABEL else
+            DEFVAR LF@vysl
+            MOVE LF@vysl int@1
+            LABEL cycle
+                MUL LF@vysl LF@vysl LF@a
+                SUB LF@a LF@a int@1
+                GT GF@expr_result LF@a int@0
+                JUMPIFEQ cycle GF@expr_result bool@true 
+            WRITE string@Vysledek\032je\032
+            WRITE LF@vysl
+            WRITE string@\010
+    POPFRAME 

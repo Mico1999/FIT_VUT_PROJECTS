@@ -1,0 +1,9 @@
+.IPPcode21
+
+DEFVAR GF@aa
+DEFVAR GF@res
+
+MOVE GF@aa int@7
+EQ GF@res GF@aa nil@nil
+
+WRITE GF@res

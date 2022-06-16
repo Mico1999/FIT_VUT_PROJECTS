@@ -1,0 +1,13 @@
+.IPPcode21
+
+JUMP call
+
+LABEL function
+WRITE string@2\010
+RETURN
+
+LABEL call
+WRITE string@1\010
+CALL function
+WRITE string@3
+

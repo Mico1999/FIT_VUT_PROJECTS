@@ -1,0 +1,13 @@
+.IPPcode21
+
+DEFVAR GF@RESULT
+ADD GF@RESULT int@25 int@5
+JUMPIFEQ ok GF@RESULT int@30
+
+WRITE string@ADD\032not\032working\032
+JUMP end
+
+LABEL ok
+WRITE GF@RESULT
+
+LABEL end
