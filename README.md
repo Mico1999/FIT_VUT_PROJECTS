@@ -1,0 +1,1 @@
+# FIT_VUT_PROJECTS
