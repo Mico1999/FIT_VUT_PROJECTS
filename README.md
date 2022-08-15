@@ -2,14 +2,14 @@
 =========================================================================
 ## Repository contains all crucial projects from bachelor study of FIT VUT in Brno (2019-2022)
 =========================================================================
-### First year
+## First year
 IOS => Operating systems
 Link for details of subject => https://www.fit.vut.cz/study/course/244864/.en
 -------------------------------------------------------------------------
 ITW => Web design
 Link for details of subject => https://www.fit.vut.cz/study/course/244890/.en
 -------------------------------------------------------------------------
-### Second year
+## Second year
 IAL => Algorithms
 Link for details of subject => https://www.fit.vut.cz/study/course/244827/.en
 -------------------------------------------------------------------------
@@ -28,7 +28,7 @@ Link for details of subject => https://www.fit.vut.cz/study/course/244882/.en
 IPP => Principles of programming languages and OOP 
 Link for details of subject => https://www.fit.vut.cz/study/course/244867/.en
 -------------------------------------------------------------------------
-### Third year
+## Third year
 IIS => Information systems
 Link for details of subject => https://www.fit.vut.cz/study/course/244845/.en
 -------------------------------------------------------------------------
