@@ -1,0 +1,55 @@
+<local:UserControlBase x:Class="ICSproj.App.Views.BandDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:ICSproj.App.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=BandDetailViewModel}">
+    <ScrollViewer>
+        <Grid Visibility="{Binding Model, Converter={StaticResource NullToVisibilityConverter}}" Width="250" Background="MediumAquamarine">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,0" Grid.ColumnSpan="2">
+                <Button Content=" Save " Command="{Binding SaveCommand}" Margin="5,5,5,5" Width="Auto" Height="Auto"/>
+                <Button Content=" Delete " Command="{Binding DeleteCommand}" Margin="5,5,5,5" Width="Auto" Height="Auto"/>
+            </StackPanel>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Name" Margin="0,0,0,0" Grid.RowSpan="2"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Model.Name, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5" Grid.RowSpan="1"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Description" Margin="0,0,0,0" Grid.RowSpan="2"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Model.Description, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Content="Long Description" Margin="0,0,0,0" Grid.RowSpan="2"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Model.DescriptionLong, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Content="Country of Origin" Margin="0,0,0,0" Grid.RowSpan="2"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Model.OriginCountry, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5"/>
+
+            <Label Grid.Row="5" Grid.Column="0" Content="Genre" Margin="0,0,0,0" Grid.RowSpan="2"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Model.Genre, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5"/>
+
+            <StackPanel Grid.Row="6" Orientation="Vertical" Margin="5,5,5,5" Grid.ColumnSpan="2">
+                <Label Content="Photos of the Band" HorizontalAlignment="Center" />
+                <Image Name="BandPhoto" Grid.Row="7"  Grid.RowSpan="1" Grid.ColumnSpan="2" Source="{Binding Photo.Photo}">
+                </Image>
+                <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Choose photo" Click="ButtonBase_OnClick" />
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</local:UserControlBase>
