@@ -28,6 +28,9 @@
 * IPP => Principles of programming languages and OOP 
 * Link for details of subject => https://www.fit.vut.cz/study/course/244867/.en
 -------------------------------------------------------------------------
+* ICS => C# programming language
+* Link for details of subject => https://www.fit.vut.cz/study/course/244835/.en
+-------------------------------------------------------------------------
 ## Third year
 * IIS => Information systems
 * Link for details of subject => https://www.fit.vut.cz/study/course/244845/.en
