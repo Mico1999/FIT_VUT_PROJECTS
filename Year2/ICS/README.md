@@ -2,7 +2,7 @@
 
 ### Predmet: Seminár C#, FIT VUT Brno 2020/2021
 
-### Authors
+### Autori
 
 * Marek Miček
 * Rebeka Černianska
